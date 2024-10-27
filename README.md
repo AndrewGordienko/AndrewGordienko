@@ -20,7 +20,7 @@ A repository showcasing a collection of **reinforcement learning implementations
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue)](https://github.com/AndrewGordienko/RL-Algorithms)
 
 ### 🤖 Universal Robot Movement Control Chip
-**Lead Developer** of a custom **AI-driven chip** aimed at enabling robots (both quadruped and humanoid) to autonomously adapt and optimize their movement across various terrains. This project leverages **MuJoCo** for generating random robot bodies and simulating 4,000 parallel environments with **JAX**, efficiently training models to generalize across diverse configurations. Currently, I’m focused on integrating trained models into real-world robots and designing a universal chip for wider robotic deployment.
+**Lead Developer** of a custom **AI-driven control chip** aimed at enabling robots (both quadruped and humanoid) to autonomously adapt and optimize their movement across various terrains. This project leverages **MuJoCo** for generating random robot bodies and simulating 4,000 parallel environments with **JAX**, efficiently training models to generalize across diverse configurations. Currently, I’m focused on integrating trained models into real-world robots and designing a universal chip for wider robotic deployment.
 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue)](https://github.com/AndrewGordienko/Robot-Control)
 
@@ -34,14 +34,51 @@ Designed a **hybrid reinforcement learning system** that combines **NEAT (NeuroE
 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue)](https://github.com/AndrewGordienko/NEAT-DDPG)
 
-### ⚙️ Open-Source Tooling
-My open-source contributions span a variety of useful libraries and tools:
+---
 
-- **SignWave**: A **sign language transcription tool** that won first place at JamHacks. It uses MediaPipe to convert hand gestures into structured JSON for generating accurate animations.
-- **IMEI Lookup Library**: A highly efficient Python tool for IMEI lookups, which reduces lookup costs by up to 98% through Google search and API integrations.
-- **ASN.1 to Array Converter** and **Address Cleanup Utility**: Libraries for converting data formats and geographic normalization, enabling more efficient data management.
+## ⚙️ Open-Source Tooling
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue)](https://github.com/AndrewGordienko/Open-Source-Tools)
+### MeridianIQ
+A tool for address processing and cleanup, **MeridianIQ** processes addresses and retrieves latitude and longitude based on city, state/province, and country information for Canadian and U.S. locations. It uses a **language model (OllamaLLM)** to parse address components and Google Search as a backup, ensuring high accuracy and reliability.
+
+- **Features**:
+  - Processes addresses and extracts city, state/province, and country.
+  - Retrieves coordinates using postal code datasets.
+  - Utilizes OllamaLLM for parsing address strings and Google Search for fallbacks.
+  - Logs failed lookups for further investigation.
+
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue)](https://github.com/AndrewGordienko/address-cleanup)
+
+### IMEI Lookup Library
+The **IMEI Lookup Library** is a Python package for looking up phone models using IMEI numbers. Combining Google search and API calls, it retrieves phone model information efficiently while caching results to avoid redundant lookups.
+
+- **Features**:
+  - Lookup via Google and APIs.
+  - Caches results and logs failed lookups.
+  - Generates visualizations (bar graphs, pie charts) for phone model distributions.
+  - Supports large CSV processing with progress tracking.
+
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue)](https://github.com/AndrewGordienko/imei-lookup)
+
+### Flexiparse
+The **Flexiparse** library dynamically parses and exports data from OpenSearch JSON API responses into structured CSV format, automating the extraction and transformation of unstructured JSON data into a usable format.
+
+- **Features**:
+  - Dynamically extracts fields from OpenSearch JSON responses.
+  - Customizable column ordering for DataFrame output.
+  - Exports parsed data to CSV for further analysis.
+
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue)](https://github.com/AndrewGordienko/flexiparse)
+
+### Havoc Monkey
+A **network resilience testing tool**, Havoc Monkey simulates disruptions inspired by Netflix’s Chaos Monkey, testing network reliability through randomized interface toggling, traffic shaping, and latency injection in virtualized environments like vSRX routers.
+
+- **Features**:
+  - Configurable for interface toggling, traffic shaping, and latency injection.
+  - Logs actions and restores original network states upon termination.
+  - Includes a Toronto IX Traffic Simulation for realistic traffic modeling.
+
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue)](https://github.com/AndrewGordienko/havoc-monkey)
 
 ---
 
@@ -62,5 +99,10 @@ My open-source contributions span a variety of useful libraries and tools:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-AndrewGordienko-blue)](https://www.linkedin.com/in/andrewgordienko) [![Twitter](https://img.shields.io/badge/Twitter-@AndrewGordienko-1DA1F2)](https://twitter.com/AndrewGordienko)
 
 ---
+
+### 🔥 Dynamic Widgets
+
+- **Project Visitors Counter**: ![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=AndrewGordienko)
+- **Contribution Streak**: ![GitHub Streak](https://streak-stats.demolab.com/?user=AndrewGordienko)
 
 Thank you for visiting! 🌟 Dive into my repositories, star the ones you like, and let’s connect!
